@@ -203,22 +203,53 @@ footer ul {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
     justify-content: center;
+    list-style-type: none;
+    li {
+        display: inline-block;
+        background: $black-color;
+        border-radius: 50%;
+        position: relative;
+        a {
+            font-size: 0;
+            text-decoration: none;
+            i {
+                font-size: 30px;
+                flex-direction: row;
+                color: $white-color;    
+            }
+        }
+    }
 }
 
-footer li {
-    display: inline-block;
-    background: $black-color;
-    border-radius: 50%;
-}
+/*Media*/
 
-footer a {
-    font-size: 0;
-}
+@media (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
 
-footer .social-media i {
-    font-size: 30px;
-    flex-direction: row;
-    color: $white-color;
+    .splash .taskbar {
+        font-size: 0.4em;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .splash .row {
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    button {
+        font-size: 1.3em;
+    }
 }
