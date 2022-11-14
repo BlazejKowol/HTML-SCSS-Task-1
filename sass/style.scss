@@ -16,10 +16,12 @@ $font-raleway: 'Raleway', sans-serif;
 body {
     font-family: $font-lato;
     text-align: center;
+    margin: 0;
 }
 
 section {
     margin-top: 100px;
+    padding: 0 75px;
 }
 
 p {
@@ -150,14 +152,12 @@ button a {
     border-style: solid;
     border-color: $yellow-color;
     border-radius:  50%;
-    padding: 10px;
+    padding: 13px;
     font-size: 40px;
     display: inline-block;
-    .fa-solid {
-        padding: 5px;
-    }
+    width: 80px;
+    height: 80px;
 }
-
 
 /*portfolio*/
 
@@ -169,16 +169,17 @@ button a {
 
 .portfolio-card {
     background-color: $white-color;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin: 20px 20px 80px;
     border: 2px solid;
     padding: 0;
-    margin-right: 4px;
-    flex: 0 0 33%;
+    width: 300px;
+    height: 400px;
 }
 
 .portfolio-card-image {
     overflow: hidden;
+    object-fit: cover;
+    height: 300px;
 }
 
 .portfolio img {
@@ -193,32 +194,36 @@ button a {
 
 /*footer*/
 
+
 footer p {
     color: $black-color;
     font-style: normal;
 }
 
-footer ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    list-style-type: none;
-    li {
-        display: inline-block;
-        background: $black-color;
-        border-radius: 50%;
-        position: relative;
-        a {
-            font-size: 0;
-            text-decoration: none;
-            i {
-                font-size: 30px;
-                flex-direction: row;
-                color: $white-color;    
+footer {
+    margin: 20px 0;
+    ul {
+        display: flex;
+        margin: 0 0 0 40px;
+        list-style-type: none;
+        li {
+            background: $black-color;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            margin: 0 15px 0 0;
+            padding-bottom: 0;
+            transition: all 1s;
+            a {
+                font-size: 0;
+                text-decoration: none;
+                i {
+                    font-size: 20px;
+                    color: $white-color;
+                    justify-content: space-around;
+                    display: flex; 
+                    margin: 8px 10px;
+                }
             }
         }
     }
