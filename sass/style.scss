@@ -21,7 +21,7 @@ body {
 
 section {
     margin-top: 100px;
-    padding: 0 75px;
+    //padding: 0 75px;
 }
 
 p {
@@ -32,6 +32,10 @@ p {
 
 h2 {
     margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 0;
 }
 
 /*splash*/
@@ -170,16 +174,16 @@ button a {
 .portfolio-card {
     background-color: $white-color;
     margin: 20px 20px 80px;
-    border: 2px solid;
     padding: 0;
-    width: 300px;
-    height: 400px;
+    height: 450px;
+    width: 30%;
+    justify-content: space-around;
 }
 
 .portfolio-card-image {
     overflow: hidden;
     object-fit: cover;
-    height: 300px;
+    height: 350px;
 }
 
 .portfolio img {
@@ -204,8 +208,10 @@ footer {
     margin: 20px 0;
     ul {
         display: flex;
-        margin: 0 0 0 40px;
+        //margin: 0 0 0 40px;
         list-style-type: none;
+        justify-content: center;
+        margin-top: 0;
         li {
             background: $black-color;
             border-radius: 50%;
@@ -232,6 +238,10 @@ footer {
 /*Media*/
 
 @media (max-width: 767px) {
+    .row {
+        justify-content: center;
+    }
+
     .logo {
         text-align: center;
     }
